@@ -12,13 +12,15 @@ public class Vehiculo {
 	protected Fabricante fabricante;
 	protected static int cantidadVehiculos = 0;
 	
-	public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, String traccion, Fabricante fabricante) {
+	public Vehiculo(String placa, int puertas, int velocidadMaxima, String nombre, int precio, int peso, 
+			String traccion, Fabricante fabricante) {
 		cantidadVehiculos +=1 ;
 		this.placa = placa;
 		this.puertas = puertas;
 		this.velocidadMaxima = velocidadMaxima;
 		this.nombre = nombre;
 		this.precio = precio;
+		this.peso = peso;
 		this.traccion = traccion;
 		this.fabricante = fabricante;
 		fabricante.icrementar();
@@ -29,7 +31,7 @@ public class Vehiculo {
 	}
 	
 	public String getPlaca() {
-		return this.placa;
+		return placa;
 	}
 
 	public void setPlaca(String placa) {
@@ -37,7 +39,7 @@ public class Vehiculo {
 	}
 
 	public int getPuertas() {
-		return this.puertas;
+		return puertas;
 	}
 
 	public void setPuertas(int puertas) {
@@ -45,7 +47,7 @@ public class Vehiculo {
 	}
 
 	public int getVelocidadMaxima() {
-		return this.velocidadMaxima;
+		return velocidadMaxima;
 	}
 
 	public void setVelocidadMaxima(int velocidadMaxima) {
@@ -61,7 +63,7 @@ public class Vehiculo {
 	}
 
 	public int getPrecio() {
-		return this.precio;
+		return precio;
 	}
 
 	public void setPrecio(int precio) {
@@ -69,7 +71,7 @@ public class Vehiculo {
 	}
 
 	public int getPeso() {
-		return this.peso;
+		return peso;
 	}
 
 	public void setPeso(int peso) {
@@ -77,7 +79,7 @@ public class Vehiculo {
 	}
 	
 	public String getTraccion() {
-		return this.traccion;
+		return traccion;
 	}
 
 	public void setTraccion(String traccion) {
@@ -85,7 +87,7 @@ public class Vehiculo {
 	}
 
 	public Fabricante getFabricante() {
-		return this.fabricante;
+		return fabricante;
 	}
 
 	public void setFabricante(Fabricante fabricante) {
