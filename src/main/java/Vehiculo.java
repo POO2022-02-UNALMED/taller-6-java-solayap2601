@@ -68,6 +68,14 @@ public class Vehiculo {
 		this.precio = precio;
 	}
 
+	public int getPeso() {
+		return this.peso;
+	}
+
+	public void setPeso(int peso) {
+		this.peso = peso;
+	}
+	
 	public String getTraccion() {
 		return this.traccion;
 	}
